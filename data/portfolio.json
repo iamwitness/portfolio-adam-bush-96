@@ -1,0 +1,200 @@
+{
+  "items": [
+    {
+      "id": "tradeflow",
+      "title": "The $5.6B+ Flow",
+      "icon": "https://framerusercontent.com/images/f1ufjmN7MvkOzFP6CFLkIc11w.png",
+      "desktopSlot": 0,
+      "window": {
+        "defaultWidth": 820,
+        "defaultHeight": 620,
+        "minWidth": 480,
+        "minHeight": 360
+      },
+      "content": {
+        "header": {
+          "title": "The flow that did over $5.6 Billion",
+          "subtitle": "Parcl · Fintech / DeFi",
+          "tags": ["Fintech", "DeFi", "Real Estate", "Trading UI", "Design System"]
+        },
+        "sections": [
+          {
+            "type": "hero-image",
+            "src": "https://framerusercontent.com/images/f1ufjmN7MvkOzFP6CFLkIc11w.png",
+            "alt": "Parcl trading UI overview"
+          },
+          {
+            "type": "text",
+            "heading": "Why $5.6+ Billion Flowed Through This UI",
+            "body": "People don't trade $5.6+ billion on a DeFi platform because the buttons are pretty—they do it because the experience feels right. At Parcl, I crafted a trading component UI that transacted over 41.48M real estate square feet to date. That's $5,600,000,000.00+ in cumulative notional volume.\n\nBut here's the thing: users aren't calculators. They're humans who crave simplicity, a sense of control, and a little dopamine hit."
+          },
+          {
+            "type": "stats",
+            "items": [
+              { "value": "$5.6B+", "label": "Cumulative Trading Volume" },
+              { "value": "41.48M sqft", "label": "Real Estate Transacted" },
+              { "value": "25.1K", "label": "Distinct Wallet Hashes" },
+              { "value": "24K+", "label": "Monthly Active Users" }
+            ]
+          },
+          {
+            "type": "gallery",
+            "images": [
+              { "src": "https://framerusercontent.com/images/f1ufjmN7MvkOzFP6CFLkIc11w.png" },
+              { "src": "https://framerusercontent.com/images/rw0DoidcCidJvjPaOYPsXDrUPh8.png" },
+              { "src": "https://framerusercontent.com/images/t3KIebnPPKCicz3u39hMhl4.png" },
+              { "src": "https://framerusercontent.com/images/zo71h6L4DaTNXkvz1m5nzMKYdU.png" },
+              { "src": "https://framerusercontent.com/images/rCgUtVshrrUXIzfh5kFlt98fgNM.png" },
+              { "src": "https://framerusercontent.com/images/tFAummfebd9uRdfT3wBA4Iu5YLM.png" }
+            ]
+          },
+          {
+            "type": "text",
+            "heading": "It's Not Just Volume—It's What Drives It",
+            "body": "From January 2024 to April 2025, Parcl's trading UI saw distinct wallet hashes climb to 25.1K while cumulative volume hit $5.6B.\n\nThat's not an accident. People don't just want to trade—they want to feel clever doing it. We designed every interaction to reward curiosity and reduce friction, turning hesitant first-timers into loyal users.\n\nThe result? Consistent growth, billions in volume, and a UI that proves a simple truth: if you make people feel good about their choices, they'll keep coming back. Let's create something for your users that's just as irresistible."
+          },
+          {
+            "type": "gallery",
+            "images": [
+              { "src": "https://framerusercontent.com/images/zo71h6L4DaTNXkvz1m5nzMKYdU.png" },
+              { "src": "https://framerusercontent.com/images/xsJAOFMAiVSFTfTJumdtrbHMA.png" },
+              { "src": "https://framerusercontent.com/images/tFAummfebd9uRdfT3wBA4Iu5YLM.png" },
+              { "src": "https://framerusercontent.com/images/RMVhTGI3CoYOTccz7ffI4KR0Mqg.png" }
+            ]
+          },
+          {
+            "type": "link-group",
+            "links": [
+              { "label": "View Live", "url": "https://app.parcl.co/real-estate/FL-MB" }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "parcl-reframe",
+      "title": "Bridging TradFi & DeFi",
+      "icon": "https://framerusercontent.com/images/Kzk5KtwhAowGZgoePDS7aVaSoOA.png",
+      "desktopSlot": 1,
+      "window": {
+        "defaultWidth": 820,
+        "defaultHeight": 620,
+        "minWidth": 480,
+        "minHeight": 360
+      },
+      "content": {
+        "header": {
+          "title": "Bridging TradFi & DeFi: The Rebrand That Simplifies Real Estate Investing",
+          "subtitle": "Parcl · FinTech, Real Estate, DeFi",
+          "tags": ["FinTech", "Real Estate", "DeFi", "Rebrand", "Design System", "UX Strategy"]
+        },
+        "sections": [
+          {
+            "type": "hero-image",
+            "src": "https://framerusercontent.com/images/Kzk5KtwhAowGZgoePDS7aVaSoOA.png",
+            "alt": "Parcl rebrand hero"
+          },
+          {
+            "type": "text",
+            "heading": "Redefining Real Estate Investing Through Language and Design",
+            "body": "If you want to change the way people think, start by changing the words they use. As Lead Product Designer and Design System Architect at Parcl, I orchestrated a rebrand that did more than update a logo—it rewired how users perceive digital real estate. Our hypothesis was simple (and a little mischievous): swap out intimidating DeFi jargon for familiar real estate language, and watch the learning curve flatten like a well-priced plot of land.\n\nBy reframing trading fees as \"Closing Costs\" and spotlighting price per square foot, we didn't just make the platform relatable—we made it irresistible. The result? A measurable surge in onboarding and trading, proving that sometimes, the right metaphor is worth more than a thousand tooltips."
+          },
+          {
+            "type": "gallery",
+            "images": [
+              { "src": "https://framerusercontent.com/images/tIwnarMyGu60u6ds6aQ3n8vOo8.png" },
+              { "src": "https://framerusercontent.com/images/l6DzZIFsuW7caRisom5Qg060zY.png" },
+              { "src": "https://framerusercontent.com/images/9s9S8G1lU8ATRCLr3k4wemLwJY.png" },
+              { "src": "https://framerusercontent.com/images/8LvwccVd4Q3iTbxkSgSlm8cw.png" },
+              { "src": "https://framerusercontent.com/images/NVqFdchhFxI2rT1dQ38hHlcxg.png" }
+            ]
+          },
+          {
+            "type": "text",
+            "heading": "Impact: Clarity, Growth, and a New Standard for RE Investing",
+            "body": "UX was simplified, because it was the same as buying a home in the real world. Clarity is the ultimate growth hack.\n\nRe-Architected a unified multi-branded design system, reducing handoff cycles by 80% and enabling rapid iteration across teams. (Efficiency isn't just a metric; it's a competitive advantage.)\n\nLed cross-functional collaboration with founders, PMs, and engineers to deliver a scalable, accessible platform. (Great products are built by great teams, not lone wolves.)\n\nReframed the home page and deal flow to focus on actionable real estate opportunities, not just search.\n\nPrioritized user context by anchoring prices to familiar home values, making DeFi accessible to a broader audience. (If you want to democratize finance, start by demystifying it.)"
+          },
+          {
+            "type": "gallery",
+            "images": [
+              { "src": "https://framerusercontent.com/images/NVqFdchhFxI2rT1dQ38hHlcxg.png" },
+              { "src": "https://framerusercontent.com/images/tIwnarMyGu60u6ds6aQ3n8vOo8.png" },
+              { "src": "https://framerusercontent.com/images/l6DzZIFsuW7caRisom5Qg060zY.png" },
+              { "src": "https://framerusercontent.com/images/9s9S8G1lU8ATRCLr3k4wemLwJY.png" }
+            ]
+          },
+          {
+            "type": "youtube",
+            "videoId": "Vz4LZvWMXrc",
+            "caption": "Parcl Rebrand Overview"
+          },
+          {
+            "type": "link-group",
+            "links": [
+              { "label": "View parcl.co", "url": "https://parcl.co" }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "parcl-predictions-markets",
+      "title": "Prediction Markets",
+      "icon": "https://framerusercontent.com/images/dNrMj9TP5NBsurwezwyzbJk2qL8.png",
+      "desktopSlot": 2,
+      "window": {
+        "defaultWidth": 820,
+        "defaultHeight": 620,
+        "minWidth": 480,
+        "minHeight": 360
+      },
+      "content": {
+        "header": {
+          "title": "Real Estate Prediction Micro-Marketplace",
+          "subtitle": "Parcl · Fintech / Prediction Markets",
+          "tags": ["Fintech", "Prediction Markets", "Real Estate", "UX Strategy", "Feature Design"]
+        },
+        "sections": [
+          {
+            "type": "hero-image",
+            "src": "https://framerusercontent.com/images/dNrMj9TP5NBsurwezwyzbJk2qL8.png",
+            "alt": "Parcl prediction markets hero"
+          },
+          {
+            "type": "text",
+            "heading": "Reimagining Real Estate Speculation for the Modern User",
+            "body": "As Lead Product Designer and Design System Architect at Parcl, I led the feature vision for a new real estate prediction marketplace. Inspired by the success of platforms like Polymarket and Kalshi, I architected an experience centered on simple, yes/no prediction markets—making real estate speculation accessible, engaging, and data-driven.\n\nMy focus: simplify complexity, drive measurable growth, and create a platform that meets users where they are."
+          },
+          {
+            "type": "gallery",
+            "images": [
+              { "src": "https://framerusercontent.com/images/EMFto24ztz5k1iE0BB7VUduGEg.png" },
+              { "src": "https://framerusercontent.com/images/l7VkTqPawwcmY43UDIZVE00E.jpg" },
+              { "src": "https://framerusercontent.com/images/g5CRqAAwIJplkdgzz0uFo0CsIXQ.png" },
+              { "src": "https://framerusercontent.com/images/JmwixxFshWCnXhCPeMbweUcqE.png" }
+            ]
+          },
+          {
+            "type": "text",
+            "heading": "Expected Impact",
+            "body": "Expected to increase weekly traded wallets by simplifying real estate speculation into yes/no questions, attracting a broader audience.\n\nAnticipated growth in weekly total transactions as a result of a more accessible user funnel and engaging market formats.\n\nProjected to reengage previous traders who initially joined for points, by offering a fresh, interactive experience.\n\nDesigned to leverage Parcl Labs' data infrastructure and API, making data-backed market resolutions transparent and boosting platform engagement.\n\nPlanned integration of automated and manual email communications to increase user touchpoints and retention.\n\nIntended to enhance social sharing and community engagement through authentication with X (Twitter), Discord, and Telegram, supporting viral growth and feedback loops."
+          },
+          {
+            "type": "gallery",
+            "images": [
+              { "src": "https://framerusercontent.com/images/dNrMj9TP5NBsurwezwyzbJk2qL8.png" },
+              { "src": "https://framerusercontent.com/images/l7VkTqPawwcmY43UDIZVE00E.jpg" },
+              { "src": "https://framerusercontent.com/images/JmwixxFshWCnXhCPeMbweUcqE.png" },
+              { "src": "https://framerusercontent.com/images/g5CRqAAwIJplkdgzz0uFo0CsIXQ.png" }
+            ]
+          },
+          {
+            "type": "youtube",
+            "videoId": "T8PgKV_klAo",
+            "caption": "Prediction Markets Feature Overview"
+          }
+        ]
+      }
+    }
+  ]
+}

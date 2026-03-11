@@ -1,0 +1,50 @@
+{
+  "name": "adam-os",
+  "version": "0.1.0",
+  "private": false,
+  "description": "Adam Bush's Windows 95-style portfolio. One command: npx adam-os",
+  "author": "Adam Bush <adamchrisbush@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "bin": {
+    "adam-os": "./bin/adam-os.js"
+  },
+  "files": [
+    "app",
+    "components",
+    "context",
+    "data",
+    "hooks",
+    "lib",
+    "styles",
+    "public",
+    "bin",
+    "site.config.ts",
+    "tailwind.config.ts",
+    "tsconfig.json",
+    "next.config.ts",
+    "postcss.config.mjs",
+    "next-env.d.ts"
+  ],
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "16.1.6",
+    "react": "19.2.4",
+    "react-dom": "19.2.4"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "4.2.1",
+    "@types/node": "25.4.0",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "tailwindcss": "4.2.1",
+    "typescript": "5.9.3"
+  }
+}
