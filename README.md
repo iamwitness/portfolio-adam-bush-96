@@ -7,35 +7,25 @@
 
 ## Run it (anyone, anywhere)
 
-**Prerequisite: Node.js ≥ 18**
+### Already have Node.js ≥ 18?
 
 ```bash
 npx adam-os
 ```
 
-That's it. On first run it installs dependencies (~60 s), then opens
-`http://localhost:3000` in your default browser automatically.
+### Don't have Node.js? Use the one-line installer
 
----
-
-## Prerequisites
-
-`npx` ships with **npm**, which ships with **Node.js**.
-If you see `command not found: npx` you need to install Node.js first:
-
-| OS | Easiest install |
-|----|----------------|
-| **macOS** | `brew install node` or [nodejs.org](https://nodejs.org) |
-| **Windows** | Download the LTS installer at [nodejs.org](https://nodejs.org) |
-| **Linux** | `sudo apt install nodejs npm` or [nvm](https://github.com/nvm-sh/nvm) |
-
-After installing, verify with:
+**macOS / Linux** — installs Node automatically then launches the portfolio:
 ```bash
-node --version   # should print v18.x or higher
-npx --version    # ships with npm
+curl -fsSL https://raw.githubusercontent.com/iamwitness/portfolio-adam-bush-96/main/install.sh | bash
 ```
 
-Then run `npx adam-os` again.
+**Windows** — open PowerShell and run:
+```powershell
+irm https://raw.githubusercontent.com/iamwitness/portfolio-adam-bush-96/main/install.ps1 | iex
+```
+
+The installer detects your OS, installs Node.js via the best available method (Homebrew, apt, winget, etc.), then launches AdamOS automatically. On first run it also installs app dependencies (~60 s); subsequent runs are instant.
 
 ---
 
@@ -53,7 +43,7 @@ npx adam-os --port=8080      # use a specific port (auto-increments if taken)
 
 | Symptom | Fix |
 |---------|-----|
-| `command not found: npx` | Install Node.js from [nodejs.org](https://nodejs.org) |
+| `command not found: npx` | Use the one-line installer above — it handles Node.js for you |
 | `EACCES` permission error | Use `nvm` to manage Node versions without sudo |
 | Port already in use | AdamOS auto-picks the next free port — no action needed |
 | Slow first run (~60 s) | Normal — installs Next.js deps once; subsequent runs are instant |
