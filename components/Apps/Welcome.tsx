@@ -78,7 +78,7 @@ export function Welcome() {
       <p style={{ fontSize: 13, color: "var(--win95-text-disabled)", marginBottom: 6 }}>
         Hopefully this UI brings you back a few years. Unfortunately you cannot
         play Backyard Baseball on it — but you <em>can</em> get the low-down on my
-        professional career, to see if we&apos;re a match.
+        professional career.
       </p>
 
       <div
