@@ -1,6 +1,6 @@
 {
   "name": "adam-os",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "private": false,
   "description": "Adam Bush's Windows 95-style portfolio. One command: npx adam-os",
   "author": "Adam Bush <adamchrisbush@gmail.com>",
