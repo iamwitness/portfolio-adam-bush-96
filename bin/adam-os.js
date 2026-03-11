@@ -35,6 +35,28 @@ function ensureDeps() {
   }
 }
 
+// A .next left behind by an interrupted run can be missing internal manifests,
+// causing a hard crash on the next startup. Detect and remove it so Next.js
+// gets a clean slate. Only deletes .next — node_modules is untouched.
+function clearStaleNextDir() {
+  const nextDir = path.join(PKG_ROOT, ".next");
+  if (!fs.existsSync(nextDir)) return;
+
+  const buildManifest = path.join(nextDir, "build-manifest.json");
+  const devLock       = path.join(nextDir, "dev", "lock");
+
+  const isStale =
+    // dev lock still present from a crashed run
+    fs.existsSync(devLock) ||
+    // .next exists but the top-level build-manifest is missing (incomplete build)
+    !fs.existsSync(buildManifest);
+
+  if (isStale) {
+    console.log("  ✦ Clearing stale .next cache...\n");
+    fs.rmSync(nextDir, { recursive: true, force: true });
+  }
+}
+
 // Returns true if the port is available on all interfaces (same as Next.js binds)
 function isPortFree(port) {
   return new Promise((resolve) => {
@@ -100,6 +122,7 @@ async function main() {
 
   console.log("\n  AdamOS is starting up...");
   ensureDeps();
+  clearStaleNextDir();
 
   const port = await findFreePort(basePort);
   const url = `http://localhost:${port}`;
