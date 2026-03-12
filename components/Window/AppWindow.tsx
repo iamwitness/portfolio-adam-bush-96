@@ -13,6 +13,7 @@ import { ContactForm } from "@/components/Apps/ContactForm";
 import { RecycleBin } from "@/components/Apps/RecycleBin";
 import { MyComputer } from "@/components/Apps/MyComputer";
 import { Welcome } from "@/components/Apps/Welcome";
+import { Music } from "@/components/Apps/Music";
 
 interface AppWindowProps {
   window: WindowState;
@@ -162,6 +163,8 @@ function WindowContent({ window: win }: { window: WindowState }) {
       return <RecycleBin />;
     case "my-computer":
       return <MyComputer />;
+    case "music":
+      return <Music />;
     default:
       return <div style={{ padding: 16 }}>Unknown content type.</div>;
   }

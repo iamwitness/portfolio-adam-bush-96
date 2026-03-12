@@ -16,7 +16,8 @@ export type ContentType =
   | "contact"
   | "recycle-bin"
   | "my-computer"
-  | "welcome";
+  | "welcome"
+  | "music";
 
 export interface WindowState {
   id: string;

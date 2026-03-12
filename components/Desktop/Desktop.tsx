@@ -3,7 +3,6 @@
 import React, { useCallback, useEffect } from "react";
 import { useWindowManager } from "@/hooks/useWindowManager";
 import { IconGrid } from "./IconGrid";
-import { DesktopIcon } from "./DesktopIcon";
 import { AppWindow } from "@/components/Window/AppWindow";
 import { DesktopIconConfig } from "./DesktopIcon";
 import portfolioDataRaw from "@/data/portfolio.json";
@@ -20,6 +19,14 @@ const BUILTIN_ICONS: DesktopIconConfig[] = [
     contentType: "about",
     defaultSize: { width: 680, height: 580 },
     minSize: { width: 400, height: 300 },
+  },
+  {
+    id: "welcome",
+    label: "Welcome",
+    icon: "/icons/welcome.webp",
+    contentType: "welcome",
+    defaultSize: { width: 560, height: 460 },
+    minSize: { width: 400, height: 320 },
   },
   {
     id: "contact",
@@ -39,6 +46,14 @@ const BUILTIN_ICONS: DesktopIconConfig[] = [
     icon: "/icons/recycle-bin.webp",
     contentType: "recycle-bin",
   },
+  {
+    id: "music",
+    label: "My Music",
+    icon: "/icons/music.webp",
+    contentType: "music",
+    defaultSize: { width: 700, height: 500 },
+    minSize: { width: 450, height: 300 },
+  },
 ];
 
 const PORTFOLIO_ICONS: DesktopIconConfig[] = portfolioData.items.map((item) => ({
@@ -57,15 +72,6 @@ const PORTFOLIO_ICONS: DesktopIconConfig[] = portfolioData.items.map((item) => (
   },
 }));
 
-
-const WELCOME_ICON: DesktopIconConfig = {
-  id: "welcome",
-  label: "Welcome",
-  icon: "/icons/welcome.webp",
-  contentType: "welcome",
-  defaultSize: { width: 560, height: 460 },
-  minSize: { width: 400, height: 320 },
-};
 
 export function Desktop() {
   const { state, selectIcon, openWindow } = useWindowManager();
@@ -113,11 +119,6 @@ export function Desktop() {
 
       {/* Portfolio icons — top right */}
       <IconGrid icons={PORTFOLIO_ICONS} align="right" />
-
-      {/* Welcome icon — bottom left */}
-      <div style={{ position: "absolute", bottom: 8, left: 8 }}>
-        <DesktopIcon config={WELCOME_ICON} />
-      </div>
 
       {/* Open windows */}
       {state.windows.map((win) => (

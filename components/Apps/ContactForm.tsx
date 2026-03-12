@@ -29,16 +29,16 @@ export function ContactForm() {
         </div>
       ) : (
         <form
-          onSubmit={(e) => {
-            e.preventDefault();
-            setSent(true);
-          }}
+          action={`mailto:${siteConfig.email}`}
+          method="get"
+          encType="text/plain"
           style={{ display: "flex", flexDirection: "column", gap: 12 }}
         >
           <label style={{ display: "flex", flexDirection: "column", gap: 4 }}>
             <span>Name</span>
             <input
               type="text"
+              name="Name"
               className="win95-inset"
               required
               style={{
@@ -54,6 +54,7 @@ export function ContactForm() {
             <span>Email</span>
             <input
               type="email"
+              name="Email"
               className="win95-inset"
               required
               style={{
@@ -68,6 +69,7 @@ export function ContactForm() {
           <label style={{ display: "flex", flexDirection: "column", gap: 4 }}>
             <span>Message</span>
             <textarea
+              name="Message"
               className="win95-inset"
               required
               rows={5}
