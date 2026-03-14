@@ -138,6 +138,67 @@
       }
     },
     {
+      "id": "parcl-design-system",
+      "title": "Design System & AI Pipeline",
+      "icon": "https://framerusercontent.com/images/f1ufjmN7MvkOzFP6CFLkIc11w.png",
+      "desktopSlot": 3,
+      "window": {
+        "defaultWidth": 820,
+        "defaultHeight": 620,
+        "minWidth": 480,
+        "minHeight": 360
+      },
+      "content": {
+        "header": {
+          "title": "Design System + AI Feature Assembly Pipeline",
+          "subtitle": "Parcl · Design Systems / AI Systems",
+          "tags": ["Design System", "AI Engineering", "Claude Code", "Figma", "Component Architecture", "Multi-Agent"]
+        },
+        "sections": [
+          {
+            "type": "hero-image",
+            "src": "https://framerusercontent.com/images/rw0DoidcCidJvjPaOYPsXDrUPh8.png",
+            "alt": "Parcl Design System architecture overview"
+          },
+          {
+            "type": "text",
+            "heading": "One System. 13 Agents. Zero Hardcoded Values.",
+            "body": "I designed and built a production-grade design system for a data intelligence platform — then engineered a multi-agent AI pipeline on top of it to automatically translate Figma designs into fully compliant feature code.\n\nThe two systems are tightly coupled by design. The design system provides a complete, protected component library. The agent pipeline uses it as the only valid source of UI building blocks. No agent can invent a new token. No engineer can accidentally modify a primitive. The system enforces correctness at the infrastructure level — not by asking humans to remember the rules."
+          },
+          {
+            "type": "stats",
+            "items": [
+              { "value": "77+", "label": "Components Across 3 Layers" },
+              { "value": "13", "label": "AI Agents in the Pipeline" },
+              { "value": "29", "label": "Design Governance Rules" },
+              { "value": "80%", "label": "Reduction in Handoff Cycles" }
+            ]
+          },
+          {
+            "type": "text",
+            "heading": "Part 1: A Token System Built for Downstream Consumption",
+            "body": "The design system is a four-layer architecture: Design Tokens → Atoms → Primitives → Composites. Every layer consumes only the layers below it. No layer skips a level. Every visual property — color, spacing, typography, shadow, border, motion, opacity — originates from a token. Zero hardcoded values anywhere in the component library.\n\nI authored the complete token system in Figma using the Figma Tokens Plugin, with downstream engineering consumption in mind from day one. Tokens flow through an automated pipeline to CSS, TypeScript, and Tailwind — but the source of truth lives in Figma and was owned entirely on the design side.\n\nSemantic color composition embeds opacity directly as hex alpha values. Signal yellow maps to purple in light mode — an intentional brand decision preserved exactly across themes. Spacing tokens replace Tailwind's numeric defaults entirely. The token system is a closed contract between design and engineering."
+          },
+          {
+            "type": "text",
+            "heading": "Part 2: 13-Agent AI Feature Assembly Pipeline",
+            "body": "Building features on this design system means selecting the right puzzle pieces and assembling them correctly. That assembly process — reading a Figma design, mapping every visual property to the correct token or component, verifying all 29 rules — is deterministic enough to automate.\n\nThe pipeline starts with a single command: /design [figma-url]. An Opus orchestrator reads the Figma design via MCP and routes the work. Seven parallel translation agents map color, spacing, typography, shadow, border, motion, and opacity values to their exact token counterparts. A composite-discovery agent checks whether an existing component already handles the pattern before any new code is written. A feature-builder writes the output. A validator runs all 29 rules and re-spawns the builder on any failure.\n\nThree runtime enforcement hooks make the guarantees structural, not behavioral. A PreToolUse hook blocks all writes to the token directory and existing component files — the design system library is immutable at runtime. A PostToolUse hook lints every file write for raw Tailwind values, hardcoded hex colors, React hooks, data fetching, and raw HTML text elements. A SubagentStop hook logs every agent completion for pipeline observability."
+          },
+          {
+            "type": "text",
+            "heading": "Why It Matters",
+            "body": "This eliminated an entire class of design-to-code errors. Any engineer can generate correctly-structured feature code from a Figma URL without needing to know the 29-rule ruleset. Every generated feature comes with a machine-verifiable validation report — 29 rules, pass/fail, file and line citations — so design review has an objective starting point instead of a subjective one.\n\nZero new tokens is a success metric. If a Figma value has no matching token, it's logged as @tokenDebt for a human to address. The agent never invents a value. The component library's protected status means composites and primitives are never accidentally modified during feature development. The system makes it easier to do the right thing than the wrong thing — and that's the only kind of governance that actually works."
+          },
+          {
+            "type": "link-group",
+            "links": [
+              { "label": "View Live Product", "url": "https://app.parcl.co" }
+            ]
+          }
+        ]
+      }
+    },
+    {
       "id": "parcl-predictions-markets",
       "title": "Prediction Markets",
       "icon": "https://framerusercontent.com/images/dNrMj9TP5NBsurwezwyzbJk2qL8.png",

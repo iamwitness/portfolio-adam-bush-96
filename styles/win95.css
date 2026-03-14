@@ -622,55 +622,286 @@ html, body {
 
 /* ─── Mobile ────────────────────────────────────────────────────────────── */
 
-.mobile-layout {
+.m-layout {
   position: fixed;
   inset: 0;
-  background: #f0f0f0;
+  background: #f5f5f7;
   overflow-y: auto;
   font-family: var(--font-body);
   -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
 }
 
-.mobile-header {
-  background: linear-gradient(135deg, var(--win95-titlebar) 0%, var(--win95-titlebar-end) 100%);
+/* ── Hero ─────────────────────────────────────────────── */
+
+.m-hero {
+  background: linear-gradient(150deg, #000033 0%, var(--win95-titlebar) 40%, var(--win95-titlebar-end) 100%);
   color: #fff;
-  padding: 36px 24px 28px;
+  padding: 56px 24px 40px;
+  text-align: center;
 }
 
-.mobile-card {
+.m-hero-label {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  opacity: 0.6;
+  margin-bottom: 12px;
+}
+
+.m-hero-heading {
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  margin-bottom: 12px;
+}
+
+.m-hero-sub {
+  font-size: 15px;
+  opacity: 0.7;
+  margin-bottom: 28px;
+}
+
+.m-hero-nav {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.m-hero-btn {
+  display: inline-block;
   background: #fff;
-  border-radius: var(--radius-xl);
+  color: var(--win95-titlebar);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 12px 28px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.m-hero-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+.m-hero-btn-ghost {
+  display: inline-block;
+  background: rgba(255,255,255,0.12);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 12px 28px;
+  border-radius: 10px;
+  text-decoration: none;
+  border: 1px solid rgba(255,255,255,0.25);
+  transition: background 0.15s;
+}
+
+.m-hero-btn-ghost:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+/* ── Sections ─────────────────────────────────────────── */
+
+.m-section {
+  padding: 32px 16px 8px;
+}
+
+.m-section-title {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #999;
+  margin-bottom: 16px;
+  padding-left: 4px;
+}
+
+/* ── Portfolio Cards ──────────────────────────────────── */
+
+.m-card {
+  background: #fff;
+  border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 2px 12px rgba(0,0,0,0.06);
-  margin: 12px 16px;
-  transition: box-shadow var(--transition-normal), transform var(--transition-normal);
+  margin-bottom: 16px;
 }
 
-.mobile-card:hover {
-  box-shadow: 0 6px 24px rgba(0,0,0,0.10);
-  transform: translateY(-1px);
-}
-
-.mobile-card-hero {
+.m-card-hero {
   width: 100%;
   aspect-ratio: 16 / 9;
   object-fit: cover;
 }
 
-.mobile-card-body {
+.m-card-body {
   padding: 20px;
 }
 
-.mobile-tag {
+.m-card-title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 4px;
+  color: #111;
+}
+
+.m-card-subtitle {
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 12px;
+}
+
+.m-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.m-tag {
   display: inline-block;
-  background: #e8e8f0;
-  color: #444;
+  background: #f0f0f5;
+  color: #555;
   font-size: 11px;
   font-weight: 500;
-  padding: 3px 10px;
+  padding: 4px 10px;
   border-radius: 99px;
-  margin: 0 4px 4px 0;
 }
+
+.m-btn {
+  display: inline-block;
+  background: var(--win95-titlebar);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: var(--font-body);
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.m-btn:hover {
+  background: var(--win95-titlebar-end);
+}
+
+/* ── About ────────────────────────────────────────────── */
+
+.m-about {
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+
+.m-about-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.m-about-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.m-about-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 1px;
+}
+
+.m-about-title {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 1px;
+}
+
+.m-about-location {
+  font-size: 12px;
+  color: #999;
+}
+
+.m-about-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.m-stat {
+  text-align: center;
+  background: #f5f5f7;
+  border-radius: 10px;
+  padding: 14px 8px;
+}
+
+.m-stat-value {
+  display: block;
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--win95-titlebar);
+  margin-bottom: 2px;
+}
+
+.m-stat-label {
+  display: block;
+  font-size: 10px;
+  font-weight: 500;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.m-about-bio {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.m-about-links {
+  display: flex;
+  gap: 8px;
+}
+
+.m-btn-outline {
+  display: inline-block;
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--win95-titlebar);
+  background: none;
+  border: 1.5px solid var(--win95-titlebar);
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.15s, color 0.15s;
+}
+
+.m-btn-outline:hover {
+  background: var(--win95-titlebar);
+  color: #fff;
+}
+
+/* ── Footer ───────────────────────────────────────────── */
+
+.m-footer {
+  text-align: center;
+  padding: 28px 16px 12px;
+  font-size: 12px;
+  color: #bbb;
+}
+
+/* ── Toggle (unchanged) ──────────────────────────────── */
 
 .mobile-toggle {
   position: fixed;

@@ -15,7 +15,7 @@ const BUILTIN_ICONS: DesktopIconConfig[] = [
   {
     id: "about-me",
     label: "About Me",
-    icon: "/pro-pic.jpg",
+    icon: "/icons/about-me-icon.png",
     contentType: "about",
     defaultSize: { width: 680, height: 580 },
     minSize: { width: 400, height: 300 },
