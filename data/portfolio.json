@@ -20,7 +20,7 @@
         "sections": [
           {
             "type": "hero-image",
-            "src": "https://framerusercontent.com/images/rw0DoidcCidJvjPaOYPsXDrUPh8.png",
+            "src": "https://res.cloudinary.com/drnrmetws/image/upload/f_auto,q_auto/portfolio/parcl-design-system/hero",
             "alt": "Parcl Design System architecture overview"
           },
           {
@@ -64,7 +64,7 @@
     {
       "id": "tradeflow",
       "title": "The $5.6B+ Flow",
-      "icon": "https://framerusercontent.com/images/f1ufjmN7MvkOzFP6CFLkIc11w.png",
+      "icon": "https://res.cloudinary.com/drnrmetws/image/upload/f_auto,q_auto/portfolio/tradeflow/icon",
       "desktopSlot": 1,
       "window": {
         "defaultWidth": 820,
@@ -81,7 +81,7 @@
         "sections": [
           {
             "type": "hero-image",
-            "src": "https://framerusercontent.com/images/f1ufjmN7MvkOzFP6CFLkIc11w.png",
+            "src": "https://res.cloudinary.com/drnrmetws/image/upload/f_auto,q_auto/portfolio/tradeflow/hero",
             "alt": "Parcl trading UI overview"
           },
           {
@@ -101,12 +101,12 @@
           {
             "type": "gallery",
             "images": [
-              { "src": "https://framerusercontent.com/images/f1ufjmN7MvkOzFP6CFLkIc11w.png" },
-              { "src": "https://framerusercontent.com/images/rw0DoidcCidJvjPaOYPsXDrUPh8.png" },
-              { "src": "https://framerusercontent.com/images/t3KIebnPPKCicz3u39hMhl4.png" },
-              { "src": "https://framerusercontent.com/images/zo71h6L4DaTNXkvz1m5nzMKYdU.png" },
-              { "src": "https://framerusercontent.com/images/rCgUtVshrrUXIzfh5kFlt98fgNM.png" },
-              { "src": "https://framerusercontent.com/images/tFAummfebd9uRdfT3wBA4Iu5YLM.png" }
+              { "src": "https://res.cloudinary.com/drnrmetws/image/upload/f_auto,q_auto/portfolio/tradeflow/gallery--01" },
+              { "src": "https://res.cloudinary.com/drnrmetws/image/upload/f_auto,q_auto/portfolio/tradeflow/gallery--02" },
+              { "src": "https://res.cloudinary.com/drnrmetws/image/upload/f_auto,q_auto/portfolio/tradeflow/gallery--03" },
+              { "src": "https://res.cloudinary.com/drnrmetws/image/upload/f_auto,q_auto/portfolio/tradeflow/gallery--04" },
+              { "src": "https://res.cloudinary.com/drnrmetws/image/upload/f_auto,q_auto/portfolio/tradeflow/gallery--05" },
+              { "src": "https://res.cloudinary.com/drnrmetws/image/upload/f_auto,q_auto/portfolio/tradeflow/gallery--06" }
             ]
           },
           {
@@ -117,10 +117,10 @@
           {
             "type": "gallery",
             "images": [
-              { "src": "https://framerusercontent.com/images/zo71h6L4DaTNXkvz1m5nzMKYdU.png" },
-              { "src": "https://framerusercontent.com/images/xsJAOFMAiVSFTfTJumdtrbHMA.png" },
-              { "src": "https://framerusercontent.com/images/tFAummfebd9uRdfT3wBA4Iu5YLM.png" },
-              { "src": "https://framerusercontent.com/images/RMVhTGI3CoYOTccz7ffI4KR0Mqg.png" }
+              { "src": "https://res.cloudinary.com/drnrmetws/image/upload/f_auto,q_auto/portfolio/tradeflow/gallery--04" },
+              { "src": "https://res.cloudinary.com/drnrmetws/image/upload/f_auto,q_auto/portfolio/tradeflow/gallery--07" },
+              { "src": "https://res.cloudinary.com/drnrmetws/image/upload/f_auto,q_auto/portfolio/tradeflow/gallery--06" },
+              { "src": "https://res.cloudinary.com/drnrmetws/image/upload/f_auto,q_auto/portfolio/tradeflow/gallery--08" }
             ]
           },
           {
@@ -135,7 +135,7 @@
     {
       "id": "parcl-reframe",
       "title": "Bridging TradFi & DeFi",
-      "icon": "https://framerusercontent.com/images/Kzk5KtwhAowGZgoePDS7aVaSoOA.png",
+      "icon": "https://res.cloudinary.com/drnrmetws/image/upload/f_auto,q_auto/portfolio/parcl-reframe/icon",
       "desktopSlot": 2,
       "window": {
         "defaultWidth": 820,
@@ -152,7 +152,7 @@
         "sections": [
           {
             "type": "hero-image",
-            "src": "https://framerusercontent.com/images/Kzk5KtwhAowGZgoePDS7aVaSoOA.png",
+            "src": "https://res.cloudinary.com/drnrmetws/image/upload/f_auto,q_auto/portfolio/parcl-reframe/hero",
             "alt": "Parcl rebrand hero"
           },
           {
@@ -163,11 +163,11 @@
           {
             "type": "gallery",
             "images": [
-              { "src": "https://framerusercontent.com/images/tIwnarMyGu60u6ds6aQ3n8vOo8.png" },
-              { "src": "https://framerusercontent.com/images/l6DzZIFsuW7caRisom5Qg060zY.png" },
-              { "src": "https://framerusercontent.com/images/9s9S8G1lU8ATRCLr3k4wemLwJY.png" },
-              { "src": "https://framerusercontent.com/images/8LvwccVd4Q3iTbxkSgSlm8cw.png" },
-              { "src": "https://framerusercontent.com/images/NVqFdchhFxI2rT1dQ38hHlcxg.png" }
+              { "src": "https://res.cloudinary.com/drnrmetws/image/upload/f_auto,q_auto/portfolio/parcl-reframe/gallery--01" },
+              { "src": "https://res.cloudinary.com/drnrmetws/image/upload/f_auto,q_auto/portfolio/parcl-reframe/gallery--02" },
+              { "src": "https://res.cloudinary.com/drnrmetws/image/upload/f_auto,q_auto/portfolio/parcl-reframe/gallery--03" },
+              { "src": "https://res.cloudinary.com/drnrmetws/image/upload/f_auto,q_auto/portfolio/parcl-reframe/gallery--04" },
+              { "src": "https://res.cloudinary.com/drnrmetws/image/upload/f_auto,q_auto/portfolio/parcl-reframe/gallery--05" }
             ]
           },
           {
@@ -178,10 +178,10 @@
           {
             "type": "gallery",
             "images": [
-              { "src": "https://framerusercontent.com/images/NVqFdchhFxI2rT1dQ38hHlcxg.png" },
-              { "src": "https://framerusercontent.com/images/tIwnarMyGu60u6ds6aQ3n8vOo8.png" },
-              { "src": "https://framerusercontent.com/images/l6DzZIFsuW7caRisom5Qg060zY.png" },
-              { "src": "https://framerusercontent.com/images/9s9S8G1lU8ATRCLr3k4wemLwJY.png" }
+              { "src": "https://res.cloudinary.com/drnrmetws/image/upload/f_auto,q_auto/portfolio/parcl-reframe/gallery--05" },
+              { "src": "https://res.cloudinary.com/drnrmetws/image/upload/f_auto,q_auto/portfolio/parcl-reframe/gallery--01" },
+              { "src": "https://res.cloudinary.com/drnrmetws/image/upload/f_auto,q_auto/portfolio/parcl-reframe/gallery--02" },
+              { "src": "https://res.cloudinary.com/drnrmetws/image/upload/f_auto,q_auto/portfolio/parcl-reframe/gallery--03" }
             ]
           },
           {
@@ -201,7 +201,7 @@
     {
       "id": "parcl-predictions-markets",
       "title": "Prediction Markets",
-      "icon": "https://framerusercontent.com/images/dNrMj9TP5NBsurwezwyzbJk2qL8.png",
+      "icon": "https://res.cloudinary.com/drnrmetws/image/upload/f_auto,q_auto/portfolio/parcl-predictions-markets/icon",
       "desktopSlot": 3,
       "window": {
         "defaultWidth": 820,
@@ -218,7 +218,7 @@
         "sections": [
           {
             "type": "hero-image",
-            "src": "https://framerusercontent.com/images/dNrMj9TP5NBsurwezwyzbJk2qL8.png",
+            "src": "https://res.cloudinary.com/drnrmetws/image/upload/f_auto,q_auto/portfolio/parcl-predictions-markets/hero",
             "alt": "Parcl prediction markets hero"
           },
           {
@@ -229,10 +229,10 @@
           {
             "type": "gallery",
             "images": [
-              { "src": "https://framerusercontent.com/images/EMFto24ztz5k1iE0BB7VUduGEg.png" },
-              { "src": "https://framerusercontent.com/images/l7VkTqPawwcmY43UDIZVE00E.jpg" },
-              { "src": "https://framerusercontent.com/images/g5CRqAAwIJplkdgzz0uFo0CsIXQ.png" },
-              { "src": "https://framerusercontent.com/images/JmwixxFshWCnXhCPeMbweUcqE.png" }
+              { "src": "https://res.cloudinary.com/drnrmetws/image/upload/f_auto,q_auto/portfolio/parcl-predictions-markets/gallery--01" },
+              { "src": "https://res.cloudinary.com/drnrmetws/image/upload/f_auto,q_auto/portfolio/parcl-predictions-markets/gallery--02" },
+              { "src": "https://res.cloudinary.com/drnrmetws/image/upload/f_auto,q_auto/portfolio/parcl-predictions-markets/gallery--03" },
+              { "src": "https://res.cloudinary.com/drnrmetws/image/upload/f_auto,q_auto/portfolio/parcl-predictions-markets/gallery--04" }
             ]
           },
           {
@@ -243,10 +243,10 @@
           {
             "type": "gallery",
             "images": [
-              { "src": "https://framerusercontent.com/images/dNrMj9TP5NBsurwezwyzbJk2qL8.png" },
-              { "src": "https://framerusercontent.com/images/l7VkTqPawwcmY43UDIZVE00E.jpg" },
-              { "src": "https://framerusercontent.com/images/JmwixxFshWCnXhCPeMbweUcqE.png" },
-              { "src": "https://framerusercontent.com/images/g5CRqAAwIJplkdgzz0uFo0CsIXQ.png" }
+              { "src": "https://res.cloudinary.com/drnrmetws/image/upload/f_auto,q_auto/portfolio/parcl-predictions-markets/icon" },
+              { "src": "https://res.cloudinary.com/drnrmetws/image/upload/f_auto,q_auto/portfolio/parcl-predictions-markets/gallery--02" },
+              { "src": "https://res.cloudinary.com/drnrmetws/image/upload/f_auto,q_auto/portfolio/parcl-predictions-markets/gallery--04" },
+              { "src": "https://res.cloudinary.com/drnrmetws/image/upload/f_auto,q_auto/portfolio/parcl-predictions-markets/gallery--03" }
             ]
           },
           {
