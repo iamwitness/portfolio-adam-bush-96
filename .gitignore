@@ -36,3 +36,10 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .env*.local
+
+# ── Cloudinary staging (local exports, not committed) ────
+assets/cloudinary-upload/**/*.png
+assets/cloudinary-upload/**/*.jpg
+assets/cloudinary-upload/**/*.jpeg
+assets/cloudinary-upload/**/*.webp
+assets/cloudinary-upload/**/*.gif
