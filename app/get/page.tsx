@@ -134,20 +134,6 @@ export default function GetPage() {
           <span className="win95-titlebar-title">
             AdamOS — Choose Your Experience
           </span>
-          <button
-            className="win95-titlebar-btn"
-            style={{ fontFamily: "var(--font-mono)", fontSize: 13 }}
-            tabIndex={-1}
-          >
-            ?
-          </button>
-          <button
-            className="win95-titlebar-btn btn-close"
-            style={{ fontSize: 10 }}
-            tabIndex={-1}
-          >
-            ✕
-          </button>
         </div>
 
         {/* Body */}
