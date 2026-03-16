@@ -124,20 +124,9 @@ export function Welcome() {
             />
           ))}
 
-          {/* Divider row */}
-          <tr>
-            <td
-              colSpan={2}
-              style={{
-                padding: "2px 0",
-                borderBottom: "1px solid rgba(0,0,0,0.08)",
-              }}
-            />
-          </tr>
-
           {/* About Me */}
           <TOCRow
-            striped={false}
+            striped={portfolioData.items.length % 2 === 0}
             onClick={openAbout}
             name="About Me"
             description="Background, experience, skills & philosophy"
