@@ -116,7 +116,7 @@ function printBanner(url, mode) {
 async function main() {
   checkNodeVersion();
 
-  const isProd = process.argv.includes("--prod");
+  const isDev = process.argv.includes("--dev");
   const portArg = process.argv.find((a) => a.startsWith("--port="));
   const basePort = portArg ? parseInt(portArg.split("=")[1], 10) : 3000;
 
@@ -137,12 +137,19 @@ async function main() {
   process.on("SIGINT", () => process.exit(0));
   process.on("SIGTERM", () => process.exit(0));
 
-  if (isProd) {
+  if (isDev) {
+    printBanner(url, "Development (live reload)");
+    const server = spawn(nextBin, ["dev", "--port", String(port)], {
+      cwd: PKG_ROOT, stdio: "inherit", env,
+    });
+    setTimeout(() => openBrowser(url), 3500);
+    server.on("exit", (code) => process.exit(code ?? 0));
+  } else {
     console.log("\n  Building production bundle (this takes ~30 seconds)...\n");
     try {
       execSync(`"${nextBin}" build`, { cwd: PKG_ROOT, stdio: "inherit", env });
     } catch (_) {
-      console.error("\n  ✗ Build failed. Try dev mode: npx adam-os\n");
+      console.error("\n  ✗ Build failed. Try dev mode: npx adam-os --dev\n");
       process.exit(1);
     }
     printBanner(url, "Production");
@@ -150,13 +157,6 @@ async function main() {
       cwd: PKG_ROOT, stdio: "inherit", env,
     });
     setTimeout(() => openBrowser(url), 2000);
-    server.on("exit", (code) => process.exit(code ?? 0));
-  } else {
-    printBanner(url, "Development (live reload)");
-    const server = spawn(nextBin, ["dev", "--port", String(port), "--no-turbopack"], {
-      cwd: PKG_ROOT, stdio: "inherit", env,
-    });
-    setTimeout(() => openBrowser(url), 3500);
     server.on("exit", (code) => process.exit(code ?? 0));
   }
 }
