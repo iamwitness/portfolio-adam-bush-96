@@ -153,7 +153,7 @@ async function main() {
     server.on("exit", (code) => process.exit(code ?? 0));
   } else {
     printBanner(url, "Development (live reload)");
-    const server = spawn(nextBin, ["dev", "--port", String(port)], {
+    const server = spawn(nextBin, ["dev", "--port", String(port), "--no-turbopack"], {
       cwd: PKG_ROOT, stdio: "inherit", env,
     });
     setTimeout(() => openBrowser(url), 3500);
