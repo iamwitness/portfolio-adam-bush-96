@@ -7,6 +7,7 @@ import React, {
   useMemo,
   ReactNode,
 } from "react";
+import { BREAKPOINTS } from "@/lib/constants";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -90,9 +91,27 @@ function getViewportSize() {
   return { width: window.innerWidth, height: window.innerHeight };
 }
 
+function calcMobileWindowSize(viewport: {
+  width: number;
+  height: number;
+}): { width: number; height: number } {
+  return {
+    width: Math.min(Math.floor(viewport.width * 0.85), DEFAULT_SIZE.width),
+    height: Math.floor(viewport.height * 0.75),
+  };
+}
+
 function calcCascadePosition(
-  windows: WindowState[]
+  windows: WindowState[],
+  size: { width: number; height: number },
+  viewport: { width: number; height: number }
 ): { x: number; y: number } {
+  if (viewport.width < BREAKPOINTS.mobile) {
+    return {
+      x: Math.floor((viewport.width - size.width) / 2),
+      y: 30 + (windows.length % 4) * 10,
+    };
+  }
   const count = windows.length;
   return {
     x: BASE_POSITION.x + (count % 8) * CASCADE_OFFSET,
@@ -129,8 +148,12 @@ function reducer(state: DesktopState, action: Action): DesktopState {
         });
       }
 
-      const position = calcCascadePosition(state.windows);
-      const size = defaultSize ?? DEFAULT_SIZE;
+      const vp = getViewportSize();
+      const isMobile = vp.width < BREAKPOINTS.mobile;
+      const size = isMobile
+        ? calcMobileWindowSize(vp)
+        : (defaultSize ?? DEFAULT_SIZE);
+      const position = calcCascadePosition(state.windows, size, vp);
       const newWindow: WindowState = {
         id: generateId(),
         title,

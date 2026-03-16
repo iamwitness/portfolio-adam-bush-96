@@ -18,6 +18,7 @@ interface UseResizableOptions {
   position: { x: number; y: number };
   size: { width: number; height: number };
   minSize: { width: number; height: number };
+  maxSize?: { width: number; height: number };
   onResize: (
     size: { width: number; height: number },
     position?: { x: number; y: number }
@@ -30,6 +31,7 @@ export function useResizable({
   position,
   size,
   minSize,
+  maxSize,
   onResize,
   onFocus,
   disabled = false,
@@ -92,6 +94,19 @@ export function useResizable({
         newTop = rs.startTop + clamped;
       }
 
+      if (maxSize) {
+        if (dir.includes("e")) newWidth = Math.min(newWidth, maxSize.width);
+        if (dir.includes("s")) newHeight = Math.min(newHeight, maxSize.height);
+        if (dir.includes("w")) {
+          const overflow = newWidth - maxSize.width;
+          if (overflow > 0) { newWidth = maxSize.width; newLeft += overflow; }
+        }
+        if (dir.includes("n")) {
+          const overflow = newHeight - maxSize.height;
+          if (overflow > 0) { newHeight = maxSize.height; newTop += overflow; }
+        }
+      }
+
       const hasPosition =
         dir.includes("w") || dir.includes("n");
 
@@ -109,7 +124,7 @@ export function useResizable({
         });
       }
     },
-    [minSize, onResize]
+    [minSize, maxSize, onResize]
   );
 
   const handleResizeEnd = useCallback(

@@ -25,7 +25,7 @@ const BUILTIN_ICONS: DesktopIconConfig[] = [
     label: "Welcome",
     icon: "/icons/welcome.webp",
     contentType: "welcome",
-    defaultSize: { width: 560, height: 460 },
+    defaultSize: { width: 680, height: 540 },
     minSize: { width: 400, height: 320 },
   },
   {
@@ -82,7 +82,7 @@ export function Desktop() {
       contentType: "welcome",
       title: "Welcome",
       icon: "/icons/welcome.webp",
-      defaultSize: { width: 560, height: 460 },
+      defaultSize: { width: 680, height: 540 },
       minSize: { width: 400, height: 320 },
     });
   // eslint-disable-next-line react-hooks/exhaustive-deps

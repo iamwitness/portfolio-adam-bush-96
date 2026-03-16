@@ -7,6 +7,7 @@ import { useDraggable } from "@/hooks/useDraggable";
 import { useResizable } from "@/hooks/useResizable";
 import { TitleBar } from "./TitleBar";
 import { ResizeHandles } from "./ResizeHandles";
+import { BREAKPOINTS, TASKBAR_HEIGHT } from "@/lib/constants";
 import { PortfolioViewer } from "@/components/Portfolio/PortfolioViewer";
 import { AboutMe } from "@/components/Apps/AboutMe";
 import { ContactForm } from "@/components/Apps/ContactForm";
@@ -67,17 +68,39 @@ export function AppWindow({ window: win }: AppWindowProps) {
     [focusWindow, win.id]
   );
 
+  const isMobile =
+    typeof window !== "undefined" && window.innerWidth < BREAKPOINTS.mobile;
+
+  const draggableBounds = isMobile
+    ? {
+        windowWidth: win.size.width,
+        viewportWidth: window.innerWidth,
+        viewportHeight: window.innerHeight,
+        taskbarHeight: TASKBAR_HEIGHT,
+        titleBarHeight: 28,
+      }
+    : undefined;
+
+  const resizableMaxSize = isMobile
+    ? {
+        width: window.innerWidth,
+        height: window.innerHeight - TASKBAR_HEIGHT,
+      }
+    : undefined;
+
   const { handlePointerDown, handlePointerMove, handlePointerUp } = useDraggable({
     position: win.position,
     onMove: handleMove,
     onFocus: handleFocus,
     disabled: win.maximized,
+    bounds: draggableBounds,
   });
 
   const { handleResizeStart, handleResizeMove, handleResizeEnd } = useResizable({
     position: win.position,
     size: win.size,
     minSize: win.minSize,
+    maxSize: resizableMaxSize,
     onResize: handleResize,
     onFocus: handleFocus,
     disabled: win.maximized,

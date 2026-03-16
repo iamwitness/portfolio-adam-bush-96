@@ -2,11 +2,38 @@
 
 import { useCallback, useRef } from "react";
 
+interface DraggableBounds {
+  windowWidth: number;
+  viewportWidth: number;
+  viewportHeight: number;
+  taskbarHeight: number;
+  titleBarHeight: number;
+}
+
 interface UseDraggableOptions {
   position: { x: number; y: number };
   onMove: (pos: { x: number; y: number }) => void;
   onFocus?: () => void;
   disabled?: boolean;
+  bounds?: DraggableBounds;
+}
+
+function clampDragPosition(
+  x: number,
+  y: number,
+  bounds: DraggableBounds
+): { x: number; y: number } {
+  const VISIBLE = 80;
+  return {
+    x: Math.max(
+      -(bounds.windowWidth - VISIBLE),
+      Math.min(x, bounds.viewportWidth - VISIBLE)
+    ),
+    y: Math.max(
+      0,
+      Math.min(y, bounds.viewportHeight - bounds.taskbarHeight - bounds.titleBarHeight)
+    ),
+  };
 }
 
 export function useDraggable({
@@ -14,6 +41,7 @@ export function useDraggable({
   onMove,
   onFocus,
   disabled = false,
+  bounds,
 }: UseDraggableOptions) {
   const dragging = useRef(false);
   const offsetRef = useRef({ x: 0, y: 0 });
@@ -44,10 +72,11 @@ export function useDraggable({
       if (!dragging.current) return;
       e.preventDefault();
 
-      pendingPos.current = {
-        x: e.clientX - offsetRef.current.x,
-        y: e.clientY - offsetRef.current.y,
-      };
+      const rawX = e.clientX - offsetRef.current.x;
+      const rawY = e.clientY - offsetRef.current.y;
+      pendingPos.current = bounds
+        ? clampDragPosition(rawX, rawY, bounds)
+        : { x: rawX, y: rawY };
 
       if (rafRef.current === null) {
         rafRef.current = requestAnimationFrame(() => {
@@ -56,7 +85,7 @@ export function useDraggable({
         });
       }
     },
-    [onMove]
+    [onMove, bounds]
   );
 
   const handlePointerUp = useCallback(

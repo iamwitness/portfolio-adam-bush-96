@@ -3,7 +3,7 @@
     {
       "id": "parcl-design-system",
       "title": "Design System & AI Pipeline",
-      "icon": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f3a8.png",
+      "icon": "/icons/design-system.png",
       "desktopSlot": 0,
       "window": {
         "defaultWidth": 820,
@@ -20,7 +20,7 @@
         "sections": [
           {
             "type": "hero-image",
-            "src": "https://res.cloudinary.com/drnrmetws/image/upload/f_auto,q_auto/portfolio/parcl-design-system/hero",
+            "src": "/portfolio/parcl-design-system/hero.png",
             "alt": "Parcl Design System architecture overview"
           },
           {
